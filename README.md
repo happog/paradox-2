@@ -42,7 +42,7 @@ print(pd.Engine(y).gradient(x).value)
 ## 功能实现
 
 * 图计算（Graph Computing）。
-* 自动求导（Auto Gradient）。
+* 自动求导（Auto Gradient，warning：原版本的自动求导有问题，只能处理简单的自动求导，如y = A @ x + b，而对y = (A @ x + b)**2则没有效果））。
 * 代数系统。
 * 梯度下降。
 * 神经网络API。
